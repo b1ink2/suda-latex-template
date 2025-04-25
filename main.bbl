@@ -1,0 +1,49 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}
+  \def\eprint#1#2{#2}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \let\eprint\href
+\fi
+
+\bibitem[Medivh(30)]{medivh2030}
+Medivh.
+\newblock Timeline observation log: Arthas menethil branch\allowbreak[Z].
+\newblock Karazhan Library, 30.
+
+\bibitem[{白银之手骑士团}(20)]{silverhand2020}
+{白银之手骑士团}.
+\newblock 斯坦索姆事件调查报告\allowbreak[Z].
+\newblock 洛丹伦档案馆, 20.
+
+\bibitem[安东尼达斯(15)]{antonidas2015}
+安东尼达斯.
+\newblock 圣光教义与极端情境伦理冲突\allowbreak[M].
+\newblock 达拉然: 达拉然魔法学院出版社, 15.
+
+\bibitem[Festinger(1957)]{festinger1957}
+Festinger Leon.
+\newblock A theory of cognitive dissonance\allowbreak[M].
+\newblock Stanford: Stanford University Press, 1957.
+
+\bibitem[Dollard, Doob, Miller(1939)Dollard, Doob, and Miller]{dollard1939}
+Dollard John, Doob Leonard~William, Miller Neal~E.
+\newblock Frustration and aggression\allowbreak[M].
+\newblock New Haven: Yale University Press, 1939.
+
+\bibitem[克尔苏加德(25)]{kelthuzad2025}
+克尔苏加德.
+\newblock 通灵学派精神操控研究报告\allowbreak[R].
+\newblock 通灵学院, 25.
+
+\bibitem[Jung(1921)]{jung1921}
+Jung Carl~Gustav.
+\newblock Psychological types\allowbreak[M].
+\newblock New York: Harcourt Brace, 1921.
+
+\end{thebibliography}

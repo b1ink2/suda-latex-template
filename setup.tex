@@ -1,0 +1,111 @@
+\usepackage{style}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{hologo}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{fontspec} 
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{titletoc}
+\usepackage{color}
+\usepackage{xeCJK} 
+\usepackage{caption}
+\usepackage{times}        % 删除
+\usepackage{newtxmath}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage{makecell}
+\usepackage{graphicx} % 确保已包含此包以使用旋转功能
+\usepackage{tabularx} % 确保已包含此包以使用自适应宽度的列
+\usepackage{booktabs}
+\usepackage{pdfpages}
+\usepackage[super,square,comma,sort&compress]{natbib}
+\usepackage[breaklinks=true]{hyperref}
+
+
+
+% 设置页眉
+\pagestyle{fancy}
+
+% 设置论文的页面格式
+\geometry{
+    top=3.3cm,
+    bottom=2.7cm,
+    left=2.5cm,
+    right=2.5cm,
+    bindingoffset=0.5cm,
+}
+
+% 设置英文字体为Times New Roman
+\setmainfont{Times New Roman}
+\setmonofont{Consolas}
+\newfontface\timesnewroman{Times New Roman}
+
+% 设置图标题的格式
+\captionsetup[figure]{
+    font={small},
+    labelfont={bf},
+    singlelinecheck=false,
+    justification=centering,
+    skip=0.5\baselineskip,
+}
+
+% 设置表格标题的格式
+\captionsetup[table]{
+    font={small},
+    labelfont={bf},
+    skip=1ex,
+    justification=centering,
+    aboveskip=0.5\baselineskip,
+    belowskip=0.6\baselineskip,
+}
+
+% 设置表格和图的编号格式 
+\renewcommand{\thefigure}{\thechapter.\arabic{figure}}
+\renewcommand{\thetable}{\thechapter.\arabic{table}}
+
+% 设置代码块的格式
+\lstset{
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\normalfont,
+    commentstyle=\normalfont,
+    stringstyle=\normalfont,
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    framerule=0.12mm,
+    framesep=1mm,
+}
+
+% 设置论文正文的标题格式
+\titleformat{\chapter}
+{\centering\normalfont\bfseries\heiti\fontsize{18pt}{10pt}\selectfont}
+{第\thechapter 章}{1em}{}
+\titlespacing*{\chapter}{0pt}{-1em}{1em}
+
+% 设置论文正文的section标题格式
+\titleformat{\section}[hang]
+{\normalfont\bfseries\songti\fontsize{15}{17}\selectfont}
+{\thesection}{1em}{}
+
+% 设置论文正文的subsection标题格式
+\titleformat{\subsection}[hang]
+{\normalfont\bfseries\songti\fontsize{12}{16}\selectfont}
+{\thesubsection}{1em}{}
+
+
+% 设置目录的格式
+\renewcommand{\contentsname}{\centering \heiti \zihao{-2} \bfseries 目~~ 录}
+
+\titlecontents{chapter}[0em]{\bfseries\songti\zihao{4}}{\thecontentslabel}{\hspace*{0em}}{\titlerule*[0.6pc]{$.$}\contentspage}
+\titlecontents{section}[3em]{\songti\zihao{4}\vspace{6pt}}{\contentslabel{1.6em}}{\hspace*{-4em}}{~\titlerule*[0.6pc]{$.$}~\contentspage}
+\titlecontents{subsection}[5em]{\songti\zihao{4}\vspace{5pt}}{\contentslabel{2.3em}}{\hspace*{-4em}}{~\titlerule*[0.6pc]{$.$}~\contentspage}

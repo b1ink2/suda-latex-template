@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: ./bibstyle/thuthesis-numeric.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 150 items from 100.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: ./reference/refs.bib
+Warning--entry type for "silverhand2020" isn't style-file defined
+--line 3 of file ./reference/refs.bib
+Warning--entry type for "medivh2030" isn't style-file defined
+--line 79 of file ./reference/refs.bib
+You've used 7 entries,
+            5416 wiz_defined-function locations,
+            1089 strings with 8448 characters,
+and the built_in function-call counts, 25046 in all, are:
+= -- 595
+> -- 2626
+< -- 3422
++ -- 1030
+- -- 196
+* -- 180
+:= -- 3598
+add.period$ -- 21
+call.type$ -- 7
+change.case$ -- 11
+chr.to.int$ -- 918
+cite$ -- 7
+duplicate$ -- 131
+empty$ -- 420
+format.name$ -- 116
+if$ -- 6623
+int.to.chr$ -- 1
+int.to.str$ -- 8
+missing$ -- 0
+newline$ -- 49
+num.names$ -- 21
+pop$ -- 1201
+preamble$ -- 1
+purify$ -- 7
+quote$ -- 0
+skip$ -- 2431
+stack$ -- 0
+substring$ -- 1083
+swap$ -- 7
+text.length$ -- 86
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 61
+warning$ -- 0
+while$ -- 92
+width$ -- 0
+write$ -- 97
+(There were 2 warnings)

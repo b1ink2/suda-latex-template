@@ -1,0 +1,56 @@
+\documentclass[a4paper,AutoFakeBold=2,12pt, twoside]{ctexrep}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 这是导言区                %
+% 建议宏等内容放在setup.tex %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{setup}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 这是正文区                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{contents/cover.tex}
+\newpage
+
+\pagestyle{mainmatter}                  % 切换到正文的页面样式
+\setcounter{page}{1}                    % 让页码从1开始
+\pagenumbering{roman}                   % 摘要与目录使用罗马数字页码                  
+\renewcommand{\thepage}{\Roman{page}}
+
+% 摘要
+\input{contents/abstract.tex}
+
+ 
+\vspace*{-1.5cm}                        % 调整“目录”与页眉之间的间距
+\setstretch{1.5}
+\tableofcontents
+\setstretch{1.5}
+
+\chapter*{前~~ 言}                      % 章节不编号 
+\addcontentsline{toc}{chapter}{前~~ 言} % 手动将“前言”添加到目录中
+\pagenumbering{arabic}                  % 正文使用阿拉伯数字页码
+
+% 正文
+\input{contents/introduction.tex}
+\input{contents/chap1.tex}
+\input{contents/chap2.tex}
+\input{contents/chap3.tex}
+\input{contents/chap4.tex}
+
+% 参考文献
+\addcontentsline{toc}{chapter}{参考文献}
+\bibliographystyle{./bibstyle/thuthesis-numeric}
+\bibliography{./reference/refs}
+
+% 致谢 
+\chapter*{致~~~~ 谢}
+\addcontentsline{toc}{chapter}{致~~~~~~~ 谢}
+\input{contents/acknowledgements.tex}
+
+% 附录
+\chapter*{附~~~~ 录}
+\setcounter{chapter}{1}
+\input{contents/appendix.tex}
+
+\end{document}
